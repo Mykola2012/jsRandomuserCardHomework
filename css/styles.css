@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.user-list-continer {
+  padding: 3% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("https://wallpaperaccess.com/full/260164.jpg") center
+    center/cover no-repeat;
+}
+
+.users-list {
+  max-width: 1000px;
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.user-list-item {
+  max-width: 40%;
+  min-width: 280px;
+  min-height: 300px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  background: url("https://media.istockphoto.com/videos/gray-abstract-minimal-motion-backgrounds-loopable-elements-4k-video-id1173905761?s=640x640")
+    center center/cover no-repeat;
+}
+.user-list-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px black;
+}
+
+.main-info {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.user-age,
+.user-email {
+  color: grey;
+}
+
+.user-list-item > * {
+  margin: 0 10px;
+}
+
+.style-gender-male {
+  border: 1px solid blue;
+  box-shadow: 0 0 5px blue;
+}
+
+.style-gender-female {
+  border: 1px solid red;
+  box-shadow: 0 0 5px red;
+}
+
+.style-gender-not-selected {
+  border: 1px solid grey;
+  box-shadow: 0 0 5px grey;
+}
+
+.button-wrapper button {
+  margin: 30px 5px;
+  padding: 10px 26px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid grey;
+}

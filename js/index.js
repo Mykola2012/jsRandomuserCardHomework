@@ -72,6 +72,7 @@ function createUserItem({
   } else {
     userListItem.classList.add("style-gender-not-selected");
   }
+
   userListItem.append(
     createUserImg(src, `${firstName} ${lastName}`),
     createUserMainInfo(`${firstName} ${lastName}`),
@@ -110,8 +111,9 @@ function createUserAge(age) {
 }
 
 function createUserEmail(email) {
-  const userEmailEl = document.createElement("p");
+  const userEmailEl = document.createElement("a");
   userEmailEl.classList.add("user-email");
+  userEmailEl.setAttribute("href", "#");
   userEmailEl.textContent = email;
 
   return userEmailEl;
